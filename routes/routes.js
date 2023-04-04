@@ -1,8 +1,8 @@
-const cloudinary=require('../cloudinary');
+const cloudinary=require('../Cloud/cloudinary');
 const express=require('express');
 const route=express();
 const fileUpload=require('express-fileupload');
-const postSchema=require('../../../Schema/schema');
+const postSchema=require('../Schema/schema');
 route.use(express.json());
 route.use(fileUpload({useTempFiles:true}));
 const bodyParser=require("body-parser");

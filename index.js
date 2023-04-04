@@ -1,10 +1,10 @@
 const express=require('express');
 const app=express();
 const dotenv=require('dotenv')
-const routes=require('./backedphoto/Cloud/routes/routes')
+const routes=require('./routes/routes')
 var cors=require('cors');
 app.use(cors());
-const DataBase=require('./backedphoto/Cloud/dataBase/mongo')
+const DataBase=require('./dataBase/mongo')
 const bodyParser=require('body-parser');
 app.use(bodyParser.json());
 dotenv.config()
